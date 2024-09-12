@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #291c1c;
+  color: white;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 12px;
+}
+.header p {
+  margin: 8px;
+}
+p.date {
+  font-size: 16px;
+  font-weight: 800;
+}
+.about {
+  padding: 17px;
+  margin: 36px 0;
+}
+.about p {
+  margin: 13px 0;
+  line-height: 26px;
+  font-size: 16px;
+}
+/* Photo Shoot Section Styling */
+.photo-shoot {
+  background-color: #1c1c1c; /* Dark background for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.content-photo-shoot {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.content-photo-shoot h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-photo-shoot h1 i {
+  margin-right: 10px;
+  color: #f4a261; /* Icon color for contrast */
+}
+
+.content-photo-shoot p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-photo-shoot p i {
+  margin-right: 10px;
+  color: #2a9d8f; /* Icon color for contrast */
+}
+
+/* Button Styles */
+.apply, .call {
+  background-color: #e76f51;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply:hover, .call:hover {
+  background-color: #f4a261; /* Change background color on hover */
+}
