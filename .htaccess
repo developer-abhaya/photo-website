@@ -1,0 +1,11 @@
+# Redirect old URLs to new ones
+Redirect 301 /index.html /index.html
+Redirect 301 /form.html /form.html
+
+# Set index.html as the default page
+DirectoryIndex index.html
+
+# Optional: Rewrite rules
+RewriteEngine On
+RewriteRule ^$ index.html [L]
+RewriteRule ^form$ form.html [L]
