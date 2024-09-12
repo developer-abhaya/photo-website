@@ -1,11 +1,15 @@
-# Redirect old URLs to new ones
-Redirect 301 /index.html /index.html
-Redirect 301 /form.html /form.html
-
-# Set index.html as the default page
-DirectoryIndex index.html
-
-# Optional: Rewrite rules
+# Enable URL rewriting
 RewriteEngine On
-RewriteRule ^$ index.html [L]
-RewriteRule ^form$ form.html [L]
+
+# Redirect index.html to /Homepage
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/ [NC]
+RewriteRule ^index\.html$ /Homepage [R=301,L]
+
+# Redirect form.html to /Forms
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /form\.html\ HTTP/ [NC]
+RewriteRule ^form\.html$ /Forms [R=301,L]
+
+# Optionally, handle requests to /Homepage and /Forms if needed
+# You can use these lines if you need to rewrite these URLs to a specific file
+RewriteRule ^Homepage$ /index.html [L]
+RewriteRule ^Forms$ /form.html [L]
