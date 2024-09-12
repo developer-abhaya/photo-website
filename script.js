@@ -13,12 +13,3 @@ function handleKeyPress(event) {
     }
 }
 
-    (function(w){
-        var k="nudgify",n=w[k]||(w[k]={});
-        n.uuid="fd136dce-2553-4c68-9940-86e9fac4daab";
-        var d=document,s=d.createElement("script");
-        s.src="https://pixel.nudgify.com/pixel.js";
-        s.async=1;
-        s.charset="utf-8";
-        d.getElementsByTagName("head")[0].appendChild(s)
-    })(window)
